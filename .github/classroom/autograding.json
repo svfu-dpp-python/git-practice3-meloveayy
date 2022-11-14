@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Testing",
+      "setup": "",
+      "run": "python .github/classroom/autograding.py",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
