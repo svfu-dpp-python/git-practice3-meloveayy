@@ -1,0 +1,58 @@
+# Проверка имени пользователя и почты
+git config --global --list
+
+# Клонирование репозитория
+git clone <URL репозитория>
+
+# Просмотр истории коммитов
+git log
+
+# Добавление лучшего клиента Git
+echo "Best Git client" >> git_clients.md
+git add git_clients.md
+git commit -m "Add best git client"
+
+# Добавление ещё одного клиента Git
+echo "Another Git client" >> git_clients.md
+git add git_clients.md
+git commit --amend
+
+# Добавление третьего клиента Git
+echo "Third Git client" >> git_clients.md
+git add git_clients.md
+git status
+
+# Отмена индексации файла
+git restore --staged git_clients.md
+git status
+
+# Сделать коммит
+git add git_clients.md
+git commit -m "Add third git client"
+
+# Добавление четвертого клиента Git
+echo "Fourth Git client" >> git_clients.md
+
+# Восстановление файла из коммита
+git restore git_clients.md
+
+# Отмена коммита
+echo "First Git analog" >> git_analogs.md
+git add git_analogs.md
+git commit -m "Add first git analog"
+
+echo "Second Git analog" >> git_analogs.md
+git add git_analogs.md
+git commit -m "Add second git analog"
+
+# Отмена последнего коммита
+git reset --soft HEAD~1
+
+# Выполнение коммита снова
+git add git_analogs.md
+git commit -m "Add second git analog again"
+
+# Сохранение изменений в последнем коммите и отправка их на сервер
+git add .
+git commit -m "Final commit"
+git push
